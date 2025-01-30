@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-brasil">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro arquivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <ul>
+            <li>Home</li>
+            <li>Product</li>
+            <li>Contatos</li>
+            <li>Favoritos</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Deixe uma mensagem</h2>
+        <label for="">Digite:</label>
+        <input type="text" id="mensagem" class="mensagem">
+        <button onclick="exibir()" class="exibir">exibir</button>
+        <div id="msg"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    function exibir() {
+        let n = mensagem.value;
+        msg.innerHTML = `Olá, seja muito bem vinda ao nosso blog. <br> 
+        A mensagem escolhida foi: "${n}"`
+    }
+</script>
